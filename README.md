@@ -16,11 +16,14 @@ This is the name of your python file.
 ```sh
 dlt pipeline pipeline_name show
 ```
-This is the name of your pipeline defined in your python file. Example : A pipeline `from_dictionary` that loads data from a defined dictionary to DuckDB.
+This is the name of your pipeline defined in your python file. 
+
+Example : The pipeline `african_countries` loads data from a defined `source` to `DuckDB`.
 ```sh
-   pipeline = dlt.pipeline(
-      pipeline_name="from_dictionary",
-      destination="duckdb",
-      dataset_name="mydata"
-  )
+# Create a pipeline.
+pipeline = dlt.pipeline(
+    pipeline_name="african_countries",
+    destination="duckdb",
+    dataset_name="countries" # Database schema "countries".
+)
 ```
