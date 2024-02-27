@@ -7,7 +7,11 @@ pip install dlt
 ```
 
 ## Run the pipeline.
-`python pipeline_name.py`
+```sh
+python pipeline_name.py
+```
 
 ## Inspect the created dataset using a Streamlit app.
-`dlt pipeline pipeline_name show`
+```sh
+dlt pipeline pipeline_name show
+```
