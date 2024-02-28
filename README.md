@@ -8,10 +8,22 @@ pip install dlt
 
 ## Run the pipeline.
 ```sh
-python pipeline_name.py
+python pipeline_file_name.py
 ```
+This is the name of your python file.
 
 ## Inspect the created dataset using a Streamlit app.
 ```sh
 dlt pipeline pipeline_name show
+```
+This is the name of your pipeline defined in your python file. 
+
+Example : The pipeline `african_countries` loads data from a defined `source` to `DuckDB`.
+```sh
+# Create a pipeline.
+pipeline = dlt.pipeline(
+    pipeline_name="african_countries",
+    destination="duckdb",
+    dataset_name="countries" # Database schema "countries".
+)
 ```
