@@ -1,3 +1,10 @@
 pandas
 numpy
 dlt
+sqlalchemy
+pymysql
+dlt[postgres]
+dlt[bigquery]
+dlt[mysql]
+dlt[duckdb]
+streamlit
