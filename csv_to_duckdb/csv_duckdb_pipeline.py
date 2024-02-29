@@ -1,16 +1,19 @@
 import dlt
 import pandas as pd
 
-car_data = "https://github.com/Samuel-Njoroge/data-load-tool/blob/main/datasets/car_prices.csv"
-
-df = pd.read_csv(car_data, sep=None, header=None, engine='python')
+owid_disasters_csv = (
+    "https://raw.githubusercontent.com/owid/owid-datasets/master/datasets/"
+    "Natural%20disasters%20from%201900%20to%202019%20-%20EMDAT%20(2020)/"
+    "Natural%20disasters%20from%201900%20to%202019%20-%20EMDAT%20(2020).csv"
+)
+df = pd.read_csv(owid_disasters_csv)
 data = df.to_dict(orient="records")
 
 pipeline = dlt.pipeline(
-    pipeline_name="csv_duckdb",
+    pipeline_name="csv_pipeline",
     destination="duckdb",
-    dataset_name="cars_data",
+    dataset_name="disasters_data",
 )
+load_info = pipeline.run(data, table_name="natural_disasters")
 
-load_info = pipeline.run(data, table_name="cars")
 print(load_info)
