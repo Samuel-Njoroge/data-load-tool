@@ -3,6 +3,9 @@
 
 ## Overview
 ![dlt](data_load_tool_overview.svg)
+
+![dlt](dataloadtool.drawio(1).svg)
+![dlt](dataloadtool.drawio(2).svg)
 ## Installation.
 ```sh
 pip install dlt
