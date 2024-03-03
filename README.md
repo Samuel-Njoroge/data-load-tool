@@ -2,10 +2,9 @@
 [dlt](https://dlthub.com/docs) - An open-source library added in Python scripts to load data from various and often messy data sources into well-structured, live datasets.
 
 ## Overview
-![dlt](data_load_tool_overview.svg)
+![dlt](dataloadtool.svg)
+![dlt](data_load_tool.svg)
 
-![dlt](dataloadtool.drawio(1).svg)
-![dlt](dataloadtool.drawio(2).svg)
 ## Installation.
 ```sh
 pip install dlt
