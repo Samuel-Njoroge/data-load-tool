@@ -3,7 +3,6 @@
 
 ## Overview
 ![dlt](dataloadtool.svg)
-![dlt](data_load_tool.svg)
 
 ## Installation.
 ```sh
